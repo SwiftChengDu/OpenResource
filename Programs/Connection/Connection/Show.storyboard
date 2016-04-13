@@ -1,7 +1,104 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Ne-el-wva">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Show Controller-->
+        <scene sceneID="pSG-27-x6V">
+            <objects>
+                <viewController id="8A7-5W-zV7" customClass="ShowController" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cZb-4A-boY"/>
+                        <viewControllerLayoutGuide type="bottom" id="TdA-8q-L48"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zvd-Ax-zAW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mX-Ee-4mK">
+                                <rect key="frame" x="0.0" y="64" width="600" height="480"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9mX-Ee-4mK" secondAttribute="height" multiplier="5:4" id="2BU-3u-R58"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahb-Rw-Igu">
+                                <rect key="frame" x="0.0" y="544" width="600" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRU-R7-GPX">
+                                        <rect key="frame" x="260" y="-12" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Ae1-S0-k9z"/>
+                                            <constraint firstAttribute="width" constant="80" id="moG-9A-yEk"/>
+                                        </constraints>
+                                        <state key="normal" image="pai_icon"/>
+                                        <connections>
+                                            <action selector="takePhotoAction:" destination="8A7-5W-zV7" eventType="touchUpInside" id="44d-cO-Kdq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="aRU-R7-GPX" firstAttribute="centerX" secondItem="Ahb-Rw-Igu" secondAttribute="centerX" id="87w-J8-BSG"/>
+                                    <constraint firstItem="aRU-R7-GPX" firstAttribute="centerY" secondItem="Ahb-Rw-Igu" secondAttribute="centerY" id="kKl-G1-FqJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ahb-Rw-Igu" firstAttribute="leading" secondItem="zvd-Ax-zAW" secondAttribute="leading" id="0Dp-IF-VI6"/>
+                            <constraint firstAttribute="trailing" secondItem="Ahb-Rw-Igu" secondAttribute="trailing" id="7Ww-nz-yDF"/>
+                            <constraint firstAttribute="trailing" secondItem="9mX-Ee-4mK" secondAttribute="trailing" id="XxZ-Lk-bTp"/>
+                            <constraint firstItem="9mX-Ee-4mK" firstAttribute="top" secondItem="cZb-4A-boY" secondAttribute="bottom" id="pQB-GY-AZB"/>
+                            <constraint firstItem="9mX-Ee-4mK" firstAttribute="leading" secondItem="zvd-Ax-zAW" secondAttribute="leading" id="pgf-Dz-Wk7"/>
+                            <constraint firstItem="TdA-8q-L48" firstAttribute="top" secondItem="Ahb-Rw-Igu" secondAttribute="bottom" id="ta7-Xz-vgp"/>
+                            <constraint firstItem="Ahb-Rw-Igu" firstAttribute="top" secondItem="9mX-Ee-4mK" secondAttribute="bottom" id="uYF-JC-ssM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vte-Pm-BAL">
+                        <barButtonItem key="leftBarButtonItem" image="close" id="k0x-tq-iqp">
+                            <connections>
+                                <action selector="closeButtonClick:" destination="8A7-5W-zV7" id="132-Qd-mht"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="switch_icon" id="Cf4-SB-kav">
+                            <connections>
+                                <action selector="toggleCamera:" destination="8A7-5W-zV7" id="nDa-h6-A6D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="videoPreveiwView" destination="9mX-Ee-4mK" id="hN8-vN-YG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Moe-4m-XmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="101"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OBm-I4-2nV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Ne-el-wva" customClass="NavigationController" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gwA-nH-xsT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8A7-5W-zV7" kind="relationship" relationship="rootViewController" id="Bta-GL-nP2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aOr-CI-nZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="206"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="18" height="18"/>
+        <image name="pai_icon" width="80" height="80"/>
+        <image name="switch_icon" width="23" height="20"/>
+    </resources>
 </document>

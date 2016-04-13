@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5RT-AC-xlq">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BigYoungMediumGB2.0.ttf">
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Chat Controller-->
+        <scene sceneID="vD6-dO-PEL">
+            <objects>
+                <tableViewController id="5RT-AC-xlq" customClass="ChatController" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7ib-p0-9t8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="zvY-OJ-f8g">
+                            <rect key="frame" x="0.0" y="140" width="600" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <sections>
+                            <tableViewSection id="3Zy-mK-KwV">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="10" rowHeight="70" id="dwp-si-IM4">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dwp-si-IM4" id="BPo-aM-C0z">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head_2" translatesAutoresizingMaskIntoConstraints="NO" id="tQ7-h3-lnB" customClass="IBInspectableImageView" customModule="Connection" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="knQ-BY-whq"/>
+                                                        <constraint firstAttribute="height" constant="50" id="zrl-5a-1g1"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="kCornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寂寞小少女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miQ-FD-en2">
+                                                    <rect key="frame" x="65" y="15" width="60" height="12"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="XrE-NB-Ohr"/>
+                                                        <constraint firstAttribute="height" constant="12" id="s7t-28-xOZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帅哥，约吗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf2-Ms-dT0">
+                                                    <rect key="frame" x="65" y="52" width="60" height="12"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="12" id="Pl9-9g-ecA"/>
+                                                        <constraint firstAttribute="width" constant="60" id="iaJ-NX-S3I"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92s-bk-k8A" customClass="IBInspectableButton" customModule="Connection" customModuleProvider="target">
+                                                    <rect key="frame" x="65" y="32" width="30" height="15"/>
+                                                    <color key="backgroundColor" red="0.9882352941176471" green="0.44705882352941173" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="BYf-k3-Wo0"/>
+                                                        <constraint firstAttribute="width" constant="30" id="x7a-9e-gr0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="10"/>
+                                                    <state key="normal" title="18" image="woman_icon"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="kCornerRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hb-dy-MEG" customClass="IBInspectableButton" customModule="Connection" customModuleProvider="target">
+                                                    <rect key="frame" x="100" y="32" width="40" height="15"/>
+                                                    <color key="backgroundColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="Hux-3q-EHI"/>
+                                                        <constraint firstAttribute="height" constant="15" id="Mnp-j9-YIv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="10"/>
+                                                    <state key="normal" title="处女座"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="kCornerRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今天" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMW-vJ-1pf">
+                                                    <rect key="frame" x="550" y="15" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Q9z-Qu-qgJ"/>
+                                                        <constraint firstAttribute="width" constant="42" id="x4c-qc-Hiu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="92s-bk-k8A" firstAttribute="leading" secondItem="tQ7-h3-lnB" secondAttribute="trailing" constant="5" id="4cw-09-1DX"/>
+                                                <constraint firstItem="9hb-dy-MEG" firstAttribute="centerY" secondItem="92s-bk-k8A" secondAttribute="centerY" id="4gk-gU-ikf"/>
+                                                <constraint firstItem="miQ-FD-en2" firstAttribute="leading" secondItem="tQ7-h3-lnB" secondAttribute="trailing" constant="5" id="AQT-fJ-Tf6"/>
+                                                <constraint firstItem="qf2-Ms-dT0" firstAttribute="top" secondItem="92s-bk-k8A" secondAttribute="bottom" constant="5" id="BlO-eW-aHu"/>
+                                                <constraint firstItem="tQ7-h3-lnB" firstAttribute="top" secondItem="BPo-aM-C0z" secondAttribute="top" constant="10" id="Edj-vQ-8Sf"/>
+                                                <constraint firstAttribute="trailing" secondItem="GMW-vJ-1pf" secondAttribute="trailing" constant="8" id="XxR-dc-Eur"/>
+                                                <constraint firstItem="9hb-dy-MEG" firstAttribute="leading" secondItem="92s-bk-k8A" secondAttribute="trailing" constant="5" id="dpq-E8-lsp"/>
+                                                <constraint firstItem="qf2-Ms-dT0" firstAttribute="leading" secondItem="tQ7-h3-lnB" secondAttribute="trailing" constant="5" id="e5y-Yh-fvG"/>
+                                                <constraint firstItem="GMW-vJ-1pf" firstAttribute="top" secondItem="BPo-aM-C0z" secondAttribute="top" constant="15" id="kGt-oh-Cbf"/>
+                                                <constraint firstItem="miQ-FD-en2" firstAttribute="top" secondItem="BPo-aM-C0z" secondAttribute="top" constant="15" id="ovF-iQ-tjw"/>
+                                                <constraint firstItem="92s-bk-k8A" firstAttribute="top" secondItem="miQ-FD-en2" secondAttribute="bottom" constant="5" id="yXi-nr-TRG"/>
+                                                <constraint firstItem="tQ7-h3-lnB" firstAttribute="leading" secondItem="BPo-aM-C0z" secondAttribute="leading" constant="10" id="yuT-F0-PZM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="10" rowHeight="70" id="N1w-iW-eRA">
+                                        <rect key="frame" x="0.0" y="70" width="600" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N1w-iW-eRA" id="LKQ-r5-kYY">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOt-DZ-xdn" customClass="IBInspectableButton" customModule="Connection" customModuleProvider="target">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="0TQ-VX-tYI"/>
+                                                        <constraint firstAttribute="width" constant="50" id="CWq-5k-h2A"/>
+                                                    </constraints>
+                                                    <state key="normal" image="head_1"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="kCornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKv-Rl-453" customClass="IBInspectableButton" customModule="Connection" customModuleProvider="target">
+                                                    <rect key="frame" x="65" y="32" width="30" height="15"/>
+                                                    <color key="backgroundColor" red="0.98823529409999999" green="0.44705882349999998" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="aLp-gj-vZZ"/>
+                                                        <constraint firstAttribute="width" constant="30" id="mIt-hb-kVX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="10"/>
+                                                    <state key="normal" title="25" image="woman_icon"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="kCornerRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKb-6x-pBS" customClass="IBInspectableButton" customModule="Connection" customModuleProvider="target">
+                                                    <rect key="frame" x="100" y="32" width="40" height="15"/>
+                                                    <color key="backgroundColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="BhO-pp-4Xu"/>
+                                                        <constraint firstAttribute="height" constant="15" id="kGi-0q-gML"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="10"/>
+                                                    <state key="normal" title="水瓶座"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="kCornerRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冰冰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKm-Hb-Wpl">
+                                                    <rect key="frame" x="65" y="15" width="25" height="12"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="10C-PD-rmW"/>
+                                                        <constraint firstAttribute="height" constant="12" id="zOa-RY-zbU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="晨哥没来，你今天过来嘛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONt-N9-mW6">
+                                                    <rect key="frame" x="65" y="52" width="152" height="12"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="152" id="3Or-6v-h3C"/>
+                                                        <constraint firstAttribute="height" constant="12" id="GkA-YH-YbI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今天" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRS-iP-3nQ">
+                                                    <rect key="frame" x="550" y="15" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="FSD-Gi-vy3"/>
+                                                        <constraint firstAttribute="width" constant="42" id="xNT-N8-Koo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mKm-Hb-Wpl" firstAttribute="top" secondItem="LKQ-r5-kYY" secondAttribute="top" constant="15" id="1ao-qO-L1h"/>
+                                                <constraint firstItem="aOt-DZ-xdn" firstAttribute="leading" secondItem="LKQ-r5-kYY" secondAttribute="leading" constant="10" id="7LG-mV-xGt"/>
+                                                <constraint firstItem="iKv-Rl-453" firstAttribute="leading" secondItem="aOt-DZ-xdn" secondAttribute="trailing" constant="5" id="Cyh-6Z-pZV"/>
+                                                <constraint firstItem="fRS-iP-3nQ" firstAttribute="top" secondItem="LKQ-r5-kYY" secondAttribute="top" constant="15" id="Gwf-6O-tYB"/>
+                                                <constraint firstItem="ONt-N9-mW6" firstAttribute="top" secondItem="iKv-Rl-453" secondAttribute="bottom" constant="5" id="HNI-TT-Fa2"/>
+                                                <constraint firstItem="fKb-6x-pBS" firstAttribute="leading" secondItem="iKv-Rl-453" secondAttribute="trailing" constant="5" id="HcI-k7-INH"/>
+                                                <constraint firstItem="mKm-Hb-Wpl" firstAttribute="leading" secondItem="aOt-DZ-xdn" secondAttribute="trailing" constant="5" id="Pcc-EA-1Cs"/>
+                                                <constraint firstItem="aOt-DZ-xdn" firstAttribute="top" secondItem="LKQ-r5-kYY" secondAttribute="top" constant="10" id="Ri5-yx-HTZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="fRS-iP-3nQ" secondAttribute="trailing" constant="8" id="ZMz-9K-dFd"/>
+                                                <constraint firstItem="ONt-N9-mW6" firstAttribute="leading" secondItem="aOt-DZ-xdn" secondAttribute="trailing" constant="5" id="aAj-xt-iga"/>
+                                                <constraint firstItem="fKb-6x-pBS" firstAttribute="centerY" secondItem="iKv-Rl-453" secondAttribute="centerY" id="lly-S1-N9h"/>
+                                                <constraint firstItem="iKv-Rl-453" firstAttribute="top" secondItem="mKm-Hb-Wpl" secondAttribute="bottom" constant="5" id="o63-mc-H3C"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="5RT-AC-xlq" id="iYd-0b-EUq"/>
+                            <outlet property="delegate" destination="5RT-AC-xlq" id="B6q-Sc-6K5"/>
+                        </connections>
+                    </tableView>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Elg-Ny-u8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="-31"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="head_1" width="200" height="200"/>
+        <image name="head_2" width="200" height="200"/>
+        <image name="woman_icon" width="6" height="9"/>
+    </resources>
+</document>

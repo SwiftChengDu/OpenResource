@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Message Home Controller-->
+        <!--私聊-->
         <scene sceneID="00I-0N-O9F">
             <objects>
                 <viewController id="3xt-Zo-uXm" customClass="MessageHomeController" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,18 +16,40 @@
                     <view key="view" contentMode="scaleToFill" id="eu7-8L-kzw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrO-9e-aa7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="zsr-gZ-gxr" kind="embed" id="n7k-g3-Udf"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qrO-9e-aa7" secondAttribute="trailing" id="Sxe-Ni-wG0"/>
+                            <constraint firstItem="qrO-9e-aa7" firstAttribute="leading" secondItem="eu7-8L-kzw" secondAttribute="leading" id="ddy-tu-Gv0"/>
+                            <constraint firstItem="wfd-Pv-U5M" firstAttribute="top" secondItem="qrO-9e-aa7" secondAttribute="bottom" id="gyP-Zq-1TC"/>
+                            <constraint firstItem="qrO-9e-aa7" firstAttribute="top" secondItem="eu7-8L-kzw" secondAttribute="top" id="lhP-Rt-RUq"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TZB-WK-une"/>
+                    <navigationItem key="navigationItem" title="私聊" id="TZB-WK-une"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPe-8O-7xI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="980" y="260"/>
         </scene>
+        <!--Chat-->
+        <scene sceneID="xVI-KW-IMs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" id="zsr-gZ-gxr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIy-oV-srb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516.5" y="220"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="vQx-RM-vV9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ewo-RP-T2m" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ewo-RP-T2m" customClass="NavigationController" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HTR-vf-pwJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

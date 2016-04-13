@@ -16,7 +16,7 @@ let kTabBarHeight: CGFloat  = 49.0
 let kScreenWidth            = CGRectGetWidth(UIScreen.mainScreen().bounds)
 let kScreenHeight           = CGRectGetHeight(UIScreen.mainScreen().bounds)
 
-let kApearanceColor         = UIColor.colorWithRGBA(250, G: 60, B: 67)
+let kAppearanceColor         = UIColor.colorWithRGBA(250, G: 60, B: 67)
 let kMainFont               = UIFont.fontWithSize(15.0)
 let kNavigationBarFont      = UIFont.fontWithSize(16.0)
 let kCalendar               = NSCalendar.currentCalendar()
@@ -24,5 +24,5 @@ let kDateormatter           = NSDateFormatter()
 
 enum QueryMethod {
     case New        //获取最新数据
-    case Old        //获取就数据
+    case Old        //获取旧数据
 }

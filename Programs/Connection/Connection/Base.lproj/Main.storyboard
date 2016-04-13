@@ -8,14 +8,15 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TabBarController" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA" customClass="TabBar" customModule="Connection" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <outlet property="aTabBar" destination="W28-zg-YXA" id="XAO-zj-aGy"/>
                         <segue destination="hE0-qW-MXl" kind="relationship" relationship="viewControllers" id="viO-bs-Rl4"/>
                         <segue destination="Vc6-N6-xqF" kind="relationship" relationship="viewControllers" id="Ebs-NJ-6aW"/>
                         <segue destination="chb-jM-48F" kind="relationship" relationship="viewControllers" id="11l-Cm-oqj"/>
@@ -56,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="543.5" y="-38"/>
         </scene>
-        <!--Profile-->
+        <!--ProfileHome-->
         <scene sceneID="fXx-ga-L8t">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="QI9-JT-iw8" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ProfileHome" id="QI9-JT-iw8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="OVT-0Q-btt"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obz-tM-DRA" userLabel="First Responder" sceneMemberID="firstResponder"/>

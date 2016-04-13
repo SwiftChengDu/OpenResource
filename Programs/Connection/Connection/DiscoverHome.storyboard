@@ -27,7 +27,7 @@
         <!--Navigation Controller-->
         <scene sceneID="HM2-Oi-6C3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eNG-gK-uK2" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eNG-gK-uK2" customClass="NavigationController" customModule="Connection" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mok-7y-Og9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
