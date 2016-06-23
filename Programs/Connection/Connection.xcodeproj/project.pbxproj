@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C679E701CC72BA4005AFD0F /* Visitor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C679E6F1CC72BA4005AFD0F /* Visitor.storyboard */; };
+		1C679E721CC72BD0005AFD0F /* VisitorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C679E711CC72BD0005AFD0F /* VisitorController.swift */; };
 		1CD932E61CB75E8100D3B432 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD932E51CB75E8100D3B432 /* AppDelegate.swift */; };
 		1CD932ED1CB75E8100D3B432 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD932EB1CB75E8100D3B432 /* Main.storyboard */; };
 		1CD932EF1CB75E8100D3B432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD932EE1CB75E8100D3B432 /* Assets.xcassets */; };
@@ -75,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C679E6F1CC72BA4005AFD0F /* Visitor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Visitor.storyboard; sourceTree = "<group>"; };
+		1C679E711CC72BD0005AFD0F /* VisitorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorController.swift; sourceTree = "<group>"; };
 		1CD932E21CB75E8000D3B432 /* Connection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD932E51CB75E8100D3B432 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CD932EC1CB75E8100D3B432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -316,6 +320,8 @@
 				1CD9331E1CB790AB00D3B432 /* ProfileHome.storyboard */,
 				1CD933261CB793A800D3B432 /* ProfileController.swift */,
 				1CD933281CB793B600D3B432 /* ProfileHomeController.swift */,
+				1C679E6F1CC72BA4005AFD0F /* Visitor.storyboard */,
+				1C679E711CC72BD0005AFD0F /* VisitorController.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -458,6 +464,7 @@
 				1CD933191CB7908300D3B432 /* DiscoverHome.storyboard in Resources */,
 				1CD9331F1CB790AB00D3B432 /* ProfileHome.storyboard in Resources */,
 				1CD932ED1CB75E8100D3B432 /* Main.storyboard in Resources */,
+				1C679E701CC72BA4005AFD0F /* Visitor.storyboard in Resources */,
 				1CD933571CBB9EC100D3B432 /* TopMenu.xib in Resources */,
 				1CD9331B1CB7909000D3B432 /* Show.storyboard in Resources */,
 			);
@@ -551,6 +558,7 @@
 				1CD9332D1CB7972000D3B432 /* Headers.swift in Sources */,
 				1CD933791CBDDA9C00D3B432 /* AVCamUtilities.m in Sources */,
 				1CD933211CB7929300D3B432 /* HomeController.swift in Sources */,
+				1C679E721CC72BD0005AFD0F /* VisitorController.swift in Sources */,
 				1CD933511CBB902200D3B432 /* FamousType.swift in Sources */,
 				1CD933611CBCC22200D3B432 /* SimpleSubjectInfo.swift in Sources */,
 				1CD933291CB793B600D3B432 /* ProfileHomeController.swift in Sources */,

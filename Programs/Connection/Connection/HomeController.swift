@@ -122,6 +122,7 @@ extension HomeController: TopMenuDelegate {
     func topMenu(topMenu: TopMenu, didClickButton index: Int) {
         queryFollowData = (index == 1)
         
+        //因为topdatalist开始就有数据，所以这里对followdatalist作判断，切换控制栏不进行数据请求，因为本地都有数据
         if followDataList.count > 0 {
             self.dataList = (index == 0) ? self.topDataList : self.followDataList
             self.collectionView.reloadData()

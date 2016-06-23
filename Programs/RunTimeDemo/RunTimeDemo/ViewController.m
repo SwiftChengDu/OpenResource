@@ -35,6 +35,12 @@
     float a[] = {1.0,2.0,3.0};
     NSLog(@"%s",@encode(typeof(a)));
     
+    NSArray *str1 = @[@"1",@"2"];
+    NSArray *str2 = [str1 mutableCopy];
+    NSLog(@"%x-%x",str1,str2);
+    if ([str2 isKindOfClass:[NSMutableArray class]]) {
+        NSLog(@"11111");
+    }
     
     [self.view setTapActionWithBlock:^{
         NSLog(@"clik the view");

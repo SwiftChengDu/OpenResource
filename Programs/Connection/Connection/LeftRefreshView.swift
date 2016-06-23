@@ -25,10 +25,10 @@ class LeftRefreshView: UIControl {
             case .Default:
                 imageView.shouldAnimation = false
                 if beforeState == .Refreshing {
-                    UIView.animateWithDuration(0.25, animations: { 
+                    UIView.animateWithDuration(0.2, animations: {
                         var contentInset = self.scrollView!.contentInset
                         contentInset.left -= kLeftRefreshViewWidth
-                        self.scrollView?.contentInset = contentInset
+                        self.scrollView?.contentInset = UIEdgeInsetsZero;
                         debugPrint("\(self.dynamicType) \(#function) \(#line)")
                     })
                 }
@@ -36,7 +36,7 @@ class LeftRefreshView: UIControl {
                 imageView.shouldAnimation = true
                 debugPrint("\(self.dynamicType) \(#function) \(#line)")
             case .Refreshing:
-                UIView.animateWithDuration(0.25, animations: { 
+                UIView.animateWithDuration(0.2, animations: {
                     var contenInset = self.scrollView!.contentInset
                     contenInset.left += kLeftRefreshViewWidth
                     self.scrollView?.contentInset = contenInset
@@ -73,6 +73,9 @@ class LeftRefreshView: UIControl {
         let offsetX = scrollView!.contentOffset.x
         
         let criticalValue = -leftInset - CGRectGetWidth(bounds)
+        guard offsetX < 0 else {
+            return
+        }
         //拖动
         if scrollView!.dragging {
             if  refreshState == .Default && offsetX >= criticalValue {
