@@ -23,6 +23,15 @@
 		1C10FA471D1D01E60030452B /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C10FA461D1D01E60030452B /* TabBarController.m */; };
 		1C10FA4A1D1D041E0030452B /* index.ios.js in Resources */ = {isa = PBXBuildFile; fileRef = 1C10FA491D1D041E0030452B /* index.ios.js */; };
 		1C10FA4D1D1D04F10030452B /* TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C10FA4C1D1D04F10030452B /* TabBar.m */; };
+		1C10FA501D211F560030452B /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C10FA4F1D211F560030452B /* ViewController1.m */; };
+		1C10FA531D211F5F0030452B /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C10FA521D211F5F0030452B /* ViewController2.m */; };
+		1C10FA561D211F740030452B /* MessageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C10FA551D211F740030452B /* MessageCenter.m */; };
+		1C10FA581D225D140030452B /* IntervalPlay.js in Resources */ = {isa = PBXBuildFile; fileRef = 1C10FA571D225D140030452B /* IntervalPlay.js */; };
+		1C10FA5A1D225D1D0030452B /* IntervalPlay.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C10FA591D225D1D0030452B /* IntervalPlay.json */; };
+		1C297CB91D2C9C3800B99117 /* DMRCTTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C297CB81D2C9C3800B99117 /* DMRCTTableManager.m */; };
+		1C297CF01D2CD08D00B99117 /* ReactBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C297CEF1D2CD08D00B99117 /* ReactBridge.m */; };
+		1C297CF31D2CD60200B99117 /* DMRCTTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C297CF21D2CD60200B99117 /* DMRCTTable.m */; };
+		1CD179F81D24B1F1005DD26D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD179F71D24B1F1005DD26D /* WebViewController.m */; };
 		48E644CFCFBADB7F6E5C20A6 /* libPods-RCTNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CD61C7DEF2DF42364557E1 /* libPods-RCTNative.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +70,22 @@
 		1C10FA491D1D041E0030452B /* index.ios.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.ios.js; sourceTree = "<group>"; };
 		1C10FA4B1D1D04F10030452B /* TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBar.h; sourceTree = "<group>"; };
 		1C10FA4C1D1D04F10030452B /* TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBar.m; sourceTree = "<group>"; };
+		1C10FA4E1D211F560030452B /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		1C10FA4F1D211F560030452B /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		1C10FA511D211F5F0030452B /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		1C10FA521D211F5F0030452B /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		1C10FA541D211F740030452B /* MessageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCenter.h; sourceTree = "<group>"; };
+		1C10FA551D211F740030452B /* MessageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCenter.m; sourceTree = "<group>"; };
+		1C10FA571D225D140030452B /* IntervalPlay.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = IntervalPlay.js; sourceTree = "<group>"; };
+		1C10FA591D225D1D0030452B /* IntervalPlay.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IntervalPlay.json; sourceTree = "<group>"; };
+		1C297CB71D2C9C3800B99117 /* DMRCTTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRCTTableManager.h; sourceTree = "<group>"; };
+		1C297CB81D2C9C3800B99117 /* DMRCTTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMRCTTableManager.m; sourceTree = "<group>"; };
+		1C297CEE1D2CD08D00B99117 /* ReactBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactBridge.h; sourceTree = "<group>"; };
+		1C297CEF1D2CD08D00B99117 /* ReactBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactBridge.m; sourceTree = "<group>"; };
+		1C297CF11D2CD60200B99117 /* DMRCTTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRCTTable.h; sourceTree = "<group>"; };
+		1C297CF21D2CD60200B99117 /* DMRCTTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMRCTTable.m; sourceTree = "<group>"; };
+		1CD179F61D24B1F1005DD26D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		1CD179F71D24B1F1005DD26D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		6A77BC41E4B9C43E674AF644 /* Pods-RCTNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTNative.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCTNative/Pods-RCTNative.release.xcconfig"; sourceTree = "<group>"; };
 		B6252B45A2EB99918D2305F2 /* Pods-RCTNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCTNative/Pods-RCTNative.debug.xcconfig"; sourceTree = "<group>"; };
 		E1CD61C7DEF2DF42364557E1 /* libPods-RCTNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCTNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +145,20 @@
 				1C10FA461D1D01E60030452B /* TabBarController.m */,
 				1C10FA1A1D1CF0650030452B /* ViewController.h */,
 				1C10FA1B1D1CF0650030452B /* ViewController.m */,
+				1C10FA4E1D211F560030452B /* ViewController1.h */,
+				1C10FA4F1D211F560030452B /* ViewController1.m */,
+				1C10FA511D211F5F0030452B /* ViewController2.h */,
+				1C10FA521D211F5F0030452B /* ViewController2.m */,
+				1C10FA541D211F740030452B /* MessageCenter.h */,
+				1C10FA551D211F740030452B /* MessageCenter.m */,
+				1C297CB71D2C9C3800B99117 /* DMRCTTableManager.h */,
+				1C297CB81D2C9C3800B99117 /* DMRCTTableManager.m */,
+				1C297CF11D2CD60200B99117 /* DMRCTTable.h */,
+				1C297CF21D2CD60200B99117 /* DMRCTTable.m */,
+				1C297CEE1D2CD08D00B99117 /* ReactBridge.h */,
+				1C297CEF1D2CD08D00B99117 /* ReactBridge.m */,
+				1CD179F61D24B1F1005DD26D /* WebViewController.h */,
+				1CD179F71D24B1F1005DD26D /* WebViewController.m */,
 				1C10FA1D1D1CF0650030452B /* Main.storyboard */,
 				1C10FA391D1CFE490030452B /* Home.storyboard */,
 				1C10FA3B1D1CFE570030452B /* Message.storyboard */,
@@ -153,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				1C10FA491D1D041E0030452B /* index.ios.js */,
+				1C10FA571D225D140030452B /* IntervalPlay.js */,
+				1C10FA591D225D1D0030452B /* IntervalPlay.json */,
 			);
 			path = ReactComponent;
 			sourceTree = "<group>";
@@ -187,6 +228,7 @@
 				1C10FA0F1D1CF0650030452B /* Resources */,
 				92CF0453701D2176EC28952D /* [CP] Embed Pods Frameworks */,
 				A79AAA631EBFDBDF26422AD8 /* [CP] Copy Pods Resources */,
+				1C297C4F1D261A7500B99117 /* Bundle React Native code and images */,
 			);
 			buildRules = (
 			);
@@ -258,12 +300,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C10FA3E1D1CFE630030452B /* Personal.storyboard in Resources */,
+				1C10FA581D225D140030452B /* IntervalPlay.js in Resources */,
 				1C10FA241D1CF0650030452B /* LaunchScreen.storyboard in Resources */,
 				1C10FA421D1CFF430030452B /* tabbar_message@2x.png in Resources */,
 				1C10FA211D1CF0650030452B /* Assets.xcassets in Resources */,
 				1C10FA4A1D1D041E0030452B /* index.ios.js in Resources */,
 				1C10FA441D1CFF530030452B /* tabbar_profile@2x.png in Resources */,
 				1C10FA3C1D1CFE570030452B /* Message.storyboard in Resources */,
+				1C10FA5A1D225D1D0030452B /* IntervalPlay.json in Resources */,
 				1C10FA401D1CFF2C0030452B /* tabbar_home@2x.png in Resources */,
 				1C10FA1F1D1CF0650030452B /* Main.storyboard in Resources */,
 				1C10FA3A1D1CFE490030452B /* Home.storyboard in Resources */,
@@ -280,6 +324,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1C297C4F1D261A7500B99117 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n./react-native-xcode.sh";
+		};
 		92CF0453701D2176EC28952D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,8 +390,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C10FA561D211F740030452B /* MessageCenter.m in Sources */,
+				1C10FA531D211F5F0030452B /* ViewController2.m in Sources */,
 				1C10FA4D1D1D04F10030452B /* TabBar.m in Sources */,
 				1C10FA1C1D1CF0650030452B /* ViewController.m in Sources */,
+				1C297CF01D2CD08D00B99117 /* ReactBridge.m in Sources */,
+				1C297CF31D2CD60200B99117 /* DMRCTTable.m in Sources */,
+				1C297CB91D2C9C3800B99117 /* DMRCTTableManager.m in Sources */,
+				1CD179F81D24B1F1005DD26D /* WebViewController.m in Sources */,
+				1C10FA501D211F560030452B /* ViewController1.m in Sources */,
 				1C10FA471D1D01E60030452B /* TabBarController.m in Sources */,
 				1C10FA191D1CF0650030452B /* AppDelegate.m in Sources */,
 				1C10FA161D1CF0650030452B /* main.m in Sources */,

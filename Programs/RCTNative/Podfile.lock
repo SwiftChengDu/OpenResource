@@ -1,4 +1,28 @@
 PODS:
+  - libwebp (0.5.0):
+    - libwebp/core (= 0.5.0)
+    - libwebp/dec (= 0.5.0)
+    - libwebp/demux (= 0.5.0)
+    - libwebp/dsp (= 0.5.0)
+    - libwebp/enc (= 0.5.0)
+    - libwebp/mux (= 0.5.0)
+    - libwebp/utils (= 0.5.0)
+    - libwebp/webp (= 0.5.0)
+  - libwebp/core (0.5.0):
+    - libwebp/webp
+  - libwebp/dec (0.5.0):
+    - libwebp/core
+  - libwebp/demux (0.5.0):
+    - libwebp/core
+  - libwebp/dsp (0.5.0):
+    - libwebp/core
+  - libwebp/enc (0.5.0):
+    - libwebp/core
+  - libwebp/mux (0.5.0):
+    - libwebp/core
+  - libwebp/utils (0.5.0):
+    - libwebp/core
+  - libwebp/webp (0.5.0)
   - React/Core (0.28.0)
   - React/RCTImage (0.28.0):
     - React/Core
@@ -9,6 +33,12 @@ PODS:
     - React/Core
   - React/RCTWebSocket (0.28.0):
     - React/Core
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SDWebImage/WebP (3.7.6):
+    - libwebp
+    - SDWebImage/Core
 
 DEPENDENCIES:
   - React/Core (from `./node_modules/react-native`)
@@ -16,14 +46,18 @@ DEPENDENCIES:
   - React/RCTNetwork (from `./node_modules/react-native`)
   - React/RCTText (from `./node_modules/react-native`)
   - React/RCTWebSocket (from `./node_modules/react-native`)
+  - SDWebImage (~> 3.7.6)
+  - SDWebImage/WebP
 
 EXTERNAL SOURCES:
   React:
     :path: ./node_modules/react-native
 
 SPEC CHECKSUMS:
+  libwebp: 68ba2001ba6806ee52837ebd77a551a0b6567e4e
   React: 43544faed4af6a0e8fbc4b3abd26141ed654fa49
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
 
-PODFILE CHECKSUM: 7f6d88d3c27cd69e67f2649dff488532d6ab2e25
+PODFILE CHECKSUM: 6ef96b7ac8b2b4b830babddb03adcb10d00a8485
 
 COCOAPODS: 1.0.1

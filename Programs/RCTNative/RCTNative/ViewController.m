@@ -18,11 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios"];
-    RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"SimpleApp" initialProperties:nil launchOptions:nil];
-    [self.view addSubview:rootView];
-    
-    rootView.frame = self.view.bounds;
+    self.navigationItem.title = @"Home";
 }
 
 - (void)didReceiveMemoryWarning {
