@@ -35,8 +35,8 @@ class DMSwipeRow extends Component {
     this._panResponder = PanResponder.create({
       onMoveShouldSetPanResponder:(e,gs) => this.handleOnMoveShouldSetPanResponder(e,gs),
       onPanResponderMove:(e,gs) => this.handleOnPanResponderMove(e,gs),
-      onPanResponderRelease:(e,gs) => this.handleOnPanResponderEnd(e,gs),
-      onPanResponderTerminate:(e,gs) => this.handleOnPanResponderEnd(e,gs),
+      onPanResponderRelease:(e,gs) => this.handleOnPanResponderRelease(e,gs),
+      onPanResponderTerminate:(e,gs) => this.handleOnPanResponderTermination(e,gs),
       onShouldBlockNativeResponder:_ => false
     });
   }
@@ -154,7 +154,11 @@ class DMSwipeRow extends Component {
 
   handleOnMoveShouldSetPanResponder(e,gs) {
       const { dx } = gs;
-      return Math.abs(dx) > DIRECTIONAL_DISTANCE_CHANGE_THRESHOLD;
+      var shouldSet = Math.abs(dx) > DIRECTIONAL_DISTANCE_CHANGE_THRESHOLD;
+      if (shouldSet) {
+          this.props.onRowNewAction && this.props.onRowNewAction();
+      }
+      return shouldSet;
   }
 
   handleOnPanResponderMove(e,gs) {
@@ -191,8 +195,16 @@ class DMSwipeRow extends Component {
       }
   }
 
-  handleOnPanResponderEnd(e,gs) {
-      if (!this.parentScrollEnabled) {
+  handleOnPanResponderRelease(e,gs) {
+    this.handleOnPanResponderEnd(e,gs,true);
+  }
+
+  handleOnPanResponderTermination(e,gs) {
+    this.handleOnPanResponderEnd(e,gs,false);
+  }
+
+  handleOnPanResponderEnd(e,gs,release) {
+      if (!this.parentScrollEnabled && release) {
           this.parentScrollEnabled = true;
           this.props.setScrollEnabled && this.props.setScrollEnabled(true);
       }
@@ -230,6 +242,7 @@ DMSwipeRow.propTypes = {
   setScrollEnabled:PropTypes.func,
   onRowOpen:PropTypes.func,
   onRowClose:PropTypes.func,
+  onRowNewAction:PropTypes.func,
 
   leftOpenValue:PropTypes.number,
   rightOpenValue:PropTypes.number,
